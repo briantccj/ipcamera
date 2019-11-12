@@ -1,0 +1,23 @@
+﻿  stdafx.cpp
+  GroupEId.cpp
+  Groupsock.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\groupsock\groupsock.cpp(523): warning C4312: “类型强制转换”: 从“long”转换到更大的“char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\groupsock\groupsock.cpp(525): warning C4312: “类型强制转换”: 从“long”转换到更大的“char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\groupsock\groupsock.cpp(554): warning C4312: “类型强制转换”: 从“long”转换到更大的“char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\groupsock\groupsock.cpp(562): warning C4312: “类型强制转换”: 从“long”转换到更大的“char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\groupsock\groupsock.cpp(575): warning C4312: “类型强制转换”: 从“long”转换到更大的“char *”
+  GroupsockHelper.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\groupsock\groupsockhelper.cpp(96): warning C4244: “=”: 从“SOCKET”转换到“int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\groupsock\groupsockhelper.cpp(840): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+  IOHandlers.cpp
+  NetAddress.cpp
+  NetInterface.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\groupsock\netinterface.cpp(141): warning C4312: “类型强制转换”: 从“long”转换到更大的“char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\groupsock\netinterface.cpp(146): warning C4312: “类型强制转换”: 从“long”转换到更大的“char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\groupsock\netinterface.cpp(158): warning C4312: “类型强制转换”: 从“long”转换到更大的“char *”
+  正在生成代码...
+  inet.c
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\groupsock\inet.c(278): warning C4244: “=”: 从“__int64”转换到“long”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\groupsock\inet.c(313): warning C4244: “=”: 从“__int64”转换到“long”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\groupsock\inet.c(344): warning C4244: “=”: 从“__int64”转换到“long”，可能丢失数据
+  groupsock.vcxproj -> C:\Users\chaojun_che\Desktop\ipcamera\live555\live555\x64\Debug\groupsock.lib

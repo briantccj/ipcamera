@@ -1,0 +1,13 @@
+﻿  BasicHashTable.cpp
+c:\users\chaojun_che\desktop\live555\live555\basicusageenvironment\basichashtable.cpp(278): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  BasicTaskScheduler.cpp
+c:\users\chaojun_che\desktop\live555\live555\basicusageenvironment\basictaskscheduler.cpp(257): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  BasicTaskScheduler0.cpp
+c:\users\chaojun_che\desktop\live555\live555\basicusageenvironment\basictaskscheduler0.cpp(236): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  BasicUsageEnvironment.cpp
+c:\users\chaojun_che\desktop\live555\live555\basicusageenvironment\basicusageenvironment.cpp(81): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  BasicUsageEnvironment0.cpp
+c:\users\chaojun_che\desktop\live555\live555\basicusageenvironment\basicusageenvironment0.cpp(109): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  DelayQueue.cpp
+c:\users\chaojun_che\desktop\live555\live555\basicusageenvironment\delayqueue.cpp(234): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+  正在生成代码...

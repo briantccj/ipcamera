@@ -1,0 +1,407 @@
+﻿  stdafx.cpp
+  AC3AudioFileServerMediaSubsession.cpp
+  AC3AudioRTPSink.cpp
+  AC3AudioRTPSource.cpp
+  AC3AudioStreamFramer.cpp
+  ADTSAudioFileServerMediaSubsession.cpp
+  ADTSAudioFileSource.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\adtsaudiofilesource.cpp(150): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  AMRAudioFileServerMediaSubsession.cpp
+  AMRAudioFileSink.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\amraudiofilesink.cpp(79): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  AMRAudioFileSource.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\amraudiofilesource.cpp(156): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  AMRAudioRTPSink.cpp
+  AMRAudioRTPSource.cpp
+  AMRAudioSource.cpp
+  AudioInputDevice.cpp
+  AudioRTPSink.cpp
+  AVIFileSink.cpp
+  Base64.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\base64.cpp(43): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  BasicUDPSink.cpp
+  BasicUDPSource.cpp
+  BitVector.cpp
+  ByteStreamFileSource.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\bytestreamfilesource.cpp(138): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码...
+  正在编译...
+  ByteStreamMemoryBufferSource.cpp
+  ByteStreamMultiFileSource.cpp
+  DeviceSource.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\devicesource.cpp(125): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“u_int8_t *”
+  DigestAuthentication.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\digestauthentication.cpp(116): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\digestauthentication.cpp(116): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\digestauthentication.cpp(123): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\digestauthentication.cpp(123): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\digestauthentication.cpp(131): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\digestauthentication.cpp(131): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+  DVVideoFileServerMediaSubsession.cpp
+  DVVideoRTPSink.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\dvvideortpsink.cpp(89): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  DVVideoRTPSource.cpp
+  DVVideoStreamFramer.cpp
+  EBMLNumber.cpp
+  FileServerMediaSubsession.cpp
+  FileSink.cpp
+  FramedFileSource.cpp
+  FramedFilter.cpp
+  FramedSource.cpp
+  GenericMediaServer.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\genericmediaserver.cpp(189): warning C4244: “初始化”: 从“SOCKET”转换到“int”，可能丢失数据
+  GSMAudioRTPSink.cpp
+  H261VideoRTPSource.cpp
+  H263plusVideoFileServerMediaSubsession.cpp
+  H263plusVideoRTPSink.cpp
+  H263plusVideoRTPSource.cpp
+  正在生成代码...
+  正在编译...
+  H263plusVideoStreamFramer.cpp
+  H263plusVideoStreamParser.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\h263plusvideostreamparser.cpp(200): warning C4477: “fprintf”: 格式字符串“%u”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“__int64”
+  c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\h263plusvideostreamparser.cpp(200): note: 请考虑在格式字符串中使用“%llu”
+  c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\h263plusvideostreamparser.cpp(200): note: 请考虑在格式字符串中使用“%Iu”
+  c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\h263plusvideostreamparser.cpp(200): note: 请考虑在格式字符串中使用“%I64u”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\h263plusvideostreamparser.cpp(210): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+  H264or5VideoFileSink.cpp
+  H264or5VideoRTPSink.cpp
+  H264or5VideoStreamDiscreteFramer.cpp
+  H264or5VideoStreamFramer.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpegvideostreamparser.hh(114): warning C4244: “return”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\h264or5videostreamframer.cpp(224): warning C4244: “初始化”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\h264or5videostreamframer.cpp(224): warning C4244: “初始化”: 从“__int64”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\h264or5videostreamframer.cpp(706): warning C4018: “<”: 有符号/无符号不匹配
+  H264VideoFileServerMediaSubsession.cpp
+  H264VideoFileSink.cpp
+  H264VideoRTPSink.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\h264videortpsink.cpp(119): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  H264VideoRTPSource.cpp
+  H264VideoStreamDiscreteFramer.cpp
+  H264VideoStreamFramer.cpp
+  H265VideoFileServerMediaSubsession.cpp
+  H265VideoFileSink.cpp
+  H265VideoRTPSink.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\h265videortpsink.cpp(164): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  H265VideoRTPSource.cpp
+  H265VideoStreamDiscreteFramer.cpp
+  H265VideoStreamFramer.cpp
+  HLSSegmenter.cpp
+  InputFile.cpp
+  正在生成代码...
+  正在编译...
+  JPEG2000VideoRTPSink.cpp
+  JPEG2000VideoRTPSource.cpp
+  JPEGVideoRTPSink.cpp
+  JPEGVideoRTPSource.cpp
+  JPEGVideoSource.cpp
+  Locale.cpp
+  MatroskaDemuxedTrack.cpp
+  MatroskaFile.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\matroskafile.cpp(793): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\matroskafile.cpp(794): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\matroskafile.cpp(799): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\matroskafile.cpp(887): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\matroskafile.cpp(892): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\matroskafile.cpp(896): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+  MatroskaFileParser.cpp
+  MatroskaFileServerDemux.cpp
+  MatroskaFileServerMediaSubsession.cpp
+  Media.cpp
+  MediaSession.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mediasession.cpp(766): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mediasession.cpp(788): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mediasession.cpp(1115): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mediasession.cpp(1115): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+  MediaSink.cpp
+  MediaSource.cpp
+  MP3ADU.cpp
+  MP3ADUdescriptor.cpp
+  MP3ADUinterleaving.cpp
+  MP3ADURTPSink.cpp
+  MP3ADURTPSource.cpp
+  正在生成代码...
+  正在编译...
+  MP3ADUTranscoder.cpp
+  MP3AudioFileServerMediaSubsession.cpp
+  MP3AudioMatroskaFileServerMediaSubsession.cpp
+  MP3FileSource.cpp
+  MP3Internals.cpp
+  MP3InternalsHuffman.cpp
+  MP3InternalsHuffmanTable.cpp
+  MP3StreamState.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mp3streamstate.cpp(390): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  MP3Transcoder.cpp
+  MPEG1or2AudioRTPSink.cpp
+  MPEG1or2AudioRTPSource.cpp
+  MPEG1or2AudioStreamFramer.cpp
+  MPEG1or2Demux.cpp
+  MPEG1or2DemuxedElementaryStream.cpp
+  MPEG1or2DemuxedServerMediaSubsession.cpp
+  MPEG1or2FileServerDemux.cpp
+  MPEG1or2VideoFileServerMediaSubsession.cpp
+  MPEG1or2VideoRTPSink.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg1or2videortpsink.cpp(124): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“void *”
+  MPEG1or2VideoRTPSource.cpp
+  MPEG1or2VideoStreamDiscreteFramer.cpp
+  正在生成代码...
+  正在编译...
+  MPEG1or2VideoStreamFramer.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpegvideostreamparser.hh(114): warning C4244: “return”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg1or2videostreamframer.cpp(205): warning C4244: “初始化”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg1or2videostreamframer.cpp(463): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“void *”
+  MPEG2IndexFromTransportStream.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2indexfromtransportstream.cpp(620): warning C4244: “=”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2indexfromtransportstream.cpp(625): warning C4244: “=”: 从“__int64”转换到“unsigned int”，可能丢失数据
+  MPEG2TransportFileServerMediaSubsession.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportfileservermediasubsession.cpp(185): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportfileservermediasubsession.cpp(219): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+  MPEG2TransportStreamAccumulator.cpp
+  MPEG2TransportStreamDemux.cpp
+  MPEG2TransportStreamDemuxedTrack.cpp
+  MPEG2TransportStreamFramer.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportstreamframer.cpp(233): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportstreamframer.cpp(238): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“char *”
+  MPEG2TransportStreamFromESSource.cpp
+  MPEG2TransportStreamFromPESSource.cpp
+  MPEG2TransportStreamIndexFile.cpp
+  MPEG2TransportStreamMultiplexor.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportstreammultiplexor.cpp(217): warning C4244: “=”: 从“u_int16_t”转换到“unsigned char”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportstreammultiplexor.cpp(309): warning C4244: “参数”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportstreammultiplexor.cpp(342): warning C4244: “=”: 从“u_int16_t”转换到“unsigned char”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportstreammultiplexor.cpp(355): warning C4244: “初始化”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportstreammultiplexor.cpp(359): warning C4244: “参数”: 从“__int64”转换到“unsigned int”，可能丢失数据
+  MPEG2TransportStreamParser.cpp
+  MPEG2TransportStreamParser_PAT.cpp
+  MPEG2TransportStreamParser_PMT.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportstreamparser_pmt.cpp(233): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportstreamparser_pmt.cpp(327): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportstreamparser_pmt.cpp(343): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportstreamparser_pmt.cpp(358): warning C4018: “<”: 有符号/无符号不匹配
+  MPEG2TransportStreamParser_STREAM.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportstreamparser_stream.cpp(65): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg2transportstreamparser_stream.cpp(251): warning C4018: “>”: 有符号/无符号不匹配
+  MPEG2TransportStreamTrickModeFilter.cpp
+  MPEG2TransportUDPServerMediaSubsession.cpp
+  MPEG4ESVideoRTPSink.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg4esvideortpsink.cpp(128): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  MPEG4ESVideoRTPSource.cpp
+  MPEG4GenericRTPSink.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg4genericrtpsink.cpp(63): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码...
+  正在编译...
+  MPEG4GenericRTPSource.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg4genericrtpsource.cpp(88): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  MPEG4LATMAudioRTPSink.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg4latmaudiortpsink.cpp(40): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  MPEG4LATMAudioRTPSource.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg4latmaudiortpsource.cpp(202): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg4latmaudiortpsource.cpp(247): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  MPEG4VideoFileServerMediaSubsession.cpp
+  MPEG4VideoStreamDiscreteFramer.cpp
+  MPEG4VideoStreamFramer.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpegvideostreamparser.hh(114): warning C4244: “return”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpeg4videostreamframer.cpp(655): warning C4312: “类型强制转换”: 从“u_int32_t”转换到更大的“void *”
+  MPEGVideoStreamFramer.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpegvideostreamparser.hh(114): warning C4244: “return”: 从“__int64”转换到“unsigned int”，可能丢失数据
+  MPEGVideoStreamParser.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\mpegvideostreamparser.hh(114): warning C4244: “return”: 从“__int64”转换到“unsigned int”，可能丢失数据
+  MultiFramedRTPSink.cpp
+  MultiFramedRTPSource.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\multiframedrtpsource.cpp(457): warning C4244: “+=”: 从“__int64”转换到“unsigned int”，可能丢失数据
+  OggDemuxedTrack.cpp
+  OggFile.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\oggfile.cpp(194): warning C4312: “类型强制转换”: 从“u_int32_t”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\oggfile.cpp(199): warning C4312: “类型强制转换”: 从“u_int32_t”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\oggfile.cpp(251): warning C4312: “类型强制转换”: 从“u_int32_t”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\oggfile.cpp(259): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\oggfile.cpp(264): warning C4312: “类型强制转换”: 从“u_int32_t”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\oggfile.cpp(290): warning C4312: “类型强制转换”: 从“u_int32_t”转换到更大的“const char *”
+  OggFileParser.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\oggfileparser.cpp(282): warning C4244: “return”: 从“__int64”转换到“unsigned int”，可能丢失数据
+  OggFileServerDemux.cpp
+  OggFileServerMediaSubsession.cpp
+  OggFileSink.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\oggfilesink.cpp(229): warning C4334: “<<”: 32 位移位的结果被隐式转换为 64 位(是否希望进行 64 位移位?)
+  OnDemandServerMediaSubsession.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\ondemandservermediasubsession.cpp(203): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\ondemandservermediasubsession.cpp(216): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\ondemandservermediasubsession.cpp(340): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\ondemandservermediasubsession.cpp(342): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\ondemandservermediasubsession.cpp(453): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  ourMD5.cpp
+  OutputFile.cpp
+  PassiveServerMediaSubsession.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\passiveservermediasubsession.cpp(106): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\passiveservermediasubsession.cpp(165): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\passiveservermediasubsession.cpp(192): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\passiveservermediasubsession.cpp(219): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\passiveservermediasubsession.cpp(225): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“const char *”
+  正在生成代码...
+  正在编译...
+  ProxyServerMediaSession.cpp
+  QCELPAudioRTPSource.cpp
+  QuickTimeFileSink.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\quicktimefilesink.cpp(1241): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\quicktimefilesink.cpp(2210): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\quicktimefilesink.cpp(2221): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\quicktimefilesink.cpp(2326): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  QuickTimeGenericRTPSource.cpp
+  RawVideoRTPSink.cpp
+  RawVideoRTPSource.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rawvideortpsource.cpp(143): warning C4244: “=”: 从“__int64”转换到“unsigned int”，可能丢失数据
+  RTCP.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtcp.cpp(42): warning C4312: “类型强制转换”: 从“long”转换到更大的“char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtcp.cpp(53): warning C4312: “类型强制转换”: 从“long”转换到更大的“char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtcp.cpp(53): warning C4312: “类型强制转换”: 从“long”转换到更大的“void *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtcp.cpp(59): warning C4312: “类型强制转换”: 从“long”转换到更大的“char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtcp.cpp(1178): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtcp.cpp(1178): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtcp.cpp(1259): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  RTPInterface.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtpinterface.cpp(82): warning C4312: “类型强制转换”: 从“long”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtpinterface.cpp(87): warning C4312: “类型强制转换”: 从“long”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtpinterface.cpp(101): warning C4312: “类型强制转换”: 从“long”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtpinterface.cpp(442): warning C4312: “类型强制转换”: 从“long”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtpinterface.cpp(456): warning C4312: “类型强制转换”: 从“long”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtpinterface.cpp(465): warning C4312: “类型强制转换”: 从“long”转换到更大的“const char *”
+  RTPSink.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtpsink.cpp(148): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtpsink.cpp(211): warning C4312: “类型强制转换”: 从“long”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtpsink.cpp(235): warning C4312: “类型强制转换”: 从“long”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtpsink.cpp(240): warning C4312: “类型强制转换”: 从“long”转换到更大的“const char *”
+  RTPSource.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtpsource.cpp(147): warning C4312: “类型强制转换”: 从“long”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtpsource.cpp(178): warning C4312: “类型强制转换”: 从“long”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtpsource.cpp(183): warning C4312: “类型强制转换”: 从“long”转换到更大的“const char *”
+  RTSPClient.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(147): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(281): warning C4244: “初始化”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(287): warning C4244: “初始化”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(348): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(348): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(352): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(391): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(483): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(488): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(512): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(533): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(538): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(540): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(540): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(702): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(756): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(773): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(925): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(934): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(939): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(939): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(1025): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(1300): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(1320): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(1438): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(1757): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(1779): warning C4244: “初始化”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspclient.cpp(1806): warning C4244: “=”: 从“__int64”转换到“unsigned int”，可能丢失数据
+  RTSPCommon.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspcommon.cpp(312): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspcommon.cpp(312): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+  RTSPRegisterSender.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspregistersender.cpp(36): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspregistersender.cpp(120): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspregistersender.cpp(126): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspregistersender.cpp(200): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspregistersender.cpp(206): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  RTSPServer.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(203): warning C4312: “类型强制转换”: 从“int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(206): warning C4312: “类型强制转换”: 从“int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(213): warning C4312: “类型强制转换”: 从“int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(234): warning C4312: “类型强制转换”: 从“int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(237): warning C4312: “类型强制转换”: 从“int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(250): warning C4312: “类型强制转换”: 从“int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(264): warning C4312: “类型强制转换”: 从“int”转换到更大的“const char *”
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(352): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(386): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(704): warning C4244: “参数”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(862): warning C4244: “初始化”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(885): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(895): warning C4244: “初始化”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(1080): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(1080): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(1098): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(1098): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(1566): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(1566): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(1627): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(1690): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(1793): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserver.cpp(1808): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  RTSPServerRegister.cpp
+  RTSPServerSupportingHTTPStreaming.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserversupportinghttpstreaming.cpp(145): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserversupportinghttpstreaming.cpp(189): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserversupportinghttpstreaming.cpp(189): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserversupportinghttpstreaming.cpp(194): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserversupportinghttpstreaming.cpp(194): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserversupportinghttpstreaming.cpp(198): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserversupportinghttpstreaming.cpp(198): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserversupportinghttpstreaming.cpp(226): warning C4244: “初始化”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\rtspserversupportinghttpstreaming.cpp(243): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  ServerMediaSession.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\servermediasession.cpp(213): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\servermediasession.cpp(221): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\servermediasession.cpp(221): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\servermediasession.cpp(242): warning C4267: “+=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\servermediasession.cpp(281): warning C4267: “+=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\servermediasession.cpp(304): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  SimpleRTPSink.cpp
+  SimpleRTPSource.cpp
+  SIPClient.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(46): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(46): warning C4267: “初始化”: 从“size_t”转换到“const unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(50): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(69): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(73): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(78): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(118): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(144): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(191): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(216): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(220): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(239): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(248): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(276): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(290): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(539): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(565): warning C4244: “初始化”: 从“__int64”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(621): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(664): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(674): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(706): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(716): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\sipclient.cpp(877): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码...
+  正在编译...
+  StreamParser.cpp
+  StreamReplicator.cpp
+  T140TextRTPSink.cpp
+  TCPStreamSink.cpp
+  TextRTPSink.cpp
+  TheoraVideoRTPSink.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\theoravideortpsink.cpp(103): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  TheoraVideoRTPSource.cpp
+  uLawAudioFilter.cpp
+  VideoRTPSink.cpp
+  VorbisAudioRTPSink.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\vorbisaudiortpsink.cpp(112): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  VorbisAudioRTPSource.cpp
+  VP8VideoRTPSink.cpp
+  VP8VideoRTPSource.cpp
+  VP9VideoRTPSink.cpp
+  VP9VideoRTPSource.cpp
+  WAVAudioFileServerMediaSubsession.cpp
+  WAVAudioFileSource.cpp
+c:\users\chaojun_che\desktop\ipcamera\live555\live555\livemedia\wavaudiofilesource.cpp(287): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码...
+  rtcp_from_spec.c
+  liveMedia.vcxproj -> C:\Users\chaojun_che\Desktop\ipcamera\live555\live555\x64\Debug\liveMedia.lib
