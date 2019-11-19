@@ -12,6 +12,8 @@
 // #include <opencv2/opencv.hpp>
 #include <unistd.h>
 #include <cstring>
+#include<sys/types.h>
+#include<sys/stat.h>
 
 #define FILE_VIDEO     "/dev/video0"
 
@@ -274,32 +276,34 @@ void Stop(int signo)
     v4l2_camera_close(stop);
     _exit(0);
 }
+// int main(void)
+// {
+//     int fd;
+//     int buflen;
+//     int buf_handle;
+//     char *frambuf;
+//     FILE *fifo;
 
-int main(void)
-{
-    int fd;
-    int buflen;
-    int buf_handle;
-    char *frambuf;
+//     signal(SIGINT, Stop);
 
-    signal(SIGINT, Stop);
+//     fifo = create_fifo("/tmp/test.yuv");
 
-    fd = v4l2_camera_open(FILE_VIDEO);
-    stop = fd;
-    v4l2_camera_capture_start(fd);
+//     fd = v4l2_camera_open(FILE_VIDEO);
+//     stop = fd;
+//     v4l2_camera_capture_start(fd);
 
-    while(1)
-    {
-        if(v4l2_camera_data_ready_check(fd) == 0)
-        {
-            frambuf = v4l2_camera_get_a_framebuf(fd, &buflen, &buf_handle);
+//     while(1)
+//     {
+//         if(v4l2_camera_data_ready_check(fd) == 0)
+//         {
+//             // frambuf = v4l2_camera_get_a_framebuf(fd, &buflen, &buf_handle);
 
-            // frambuf
+//             fwrite(frambuf, 1, buflen, fifo);
 
-            v4l2_camera_release_framebuf(fd, buf_handle);
-        }
-    }
-    v4l2_camera_close(fd);
+//             // v4l2_camera_release_framebuf(fd, buf_handle);
+//         }
+//     }
+//     v4l2_camera_close(fd);
 
-    return(0);
-}
+//     return(0);
+// }
