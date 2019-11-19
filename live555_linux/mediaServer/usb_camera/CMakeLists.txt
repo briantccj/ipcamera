@@ -8,7 +8,7 @@ add_definitions(-std=c++11)
 add_definitions(-lm)
 
 
-include_directories(/mnt/hgfs/ubuntu_share/ipcamera/live555_linux/mediaServer/usb_camera/xvidcore/src)
+include_directories(./xvidcore/src)
 include_directories(../liveMedia/include)
 include_directories(../groupsock/include)
 include_directories(../UsageEnvironment/include)
@@ -17,9 +17,8 @@ include_directories(../../x264)
 include_directories(/mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/)
 
 
-link_directories(
-    
-/mnt/hgfs/ubuntu_share/ipcamera/live555_linux/mediaServer/usb_camera/xvidcore/build/generic/build
+link_directories(   
+./xvidcore/build/generic/build
 ../liveMedia/build
 ../groupsock
 ../BasicUsageEnvironment
@@ -30,7 +29,7 @@ link_directories(
 
 set(SOURCE_LIST 
     ubuntu_encode_usb_camera.cpp
-    /mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp
+    ../../../v4l2_camera/v4l2_camera_interface.cpp
 )
 
 add_executable(${TARGET} ${SOURCE_LIST})
