@@ -123,32 +123,59 @@ usb_camera/fast:
 	$(MAKE) -f CMakeFiles/usb_camera.dir/build.make CMakeFiles/usb_camera.dir/build
 .PHONY : usb_camera/fast
 
-ubuntu_encode_usb_camera.o: ubuntu_encode_usb_camera.c.o
+mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.o: mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp.o
+
+.PHONY : mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.o
+
+# target to build an object file
+mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp.o:
+	$(MAKE) -f CMakeFiles/usb_camera.dir/build.make CMakeFiles/usb_camera.dir/mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp.o
+.PHONY : mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp.o
+
+mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.i: mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp.i
+
+.PHONY : mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.i
+
+# target to preprocess a source file
+mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp.i:
+	$(MAKE) -f CMakeFiles/usb_camera.dir/build.make CMakeFiles/usb_camera.dir/mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp.i
+.PHONY : mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp.i
+
+mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.s: mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp.s
+
+.PHONY : mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.s
+
+# target to generate assembly for a file
+mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp.s:
+	$(MAKE) -f CMakeFiles/usb_camera.dir/build.make CMakeFiles/usb_camera.dir/mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp.s
+.PHONY : mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp.s
+
+ubuntu_encode_usb_camera.o: ubuntu_encode_usb_camera.cpp.o
 
 .PHONY : ubuntu_encode_usb_camera.o
 
 # target to build an object file
-ubuntu_encode_usb_camera.c.o:
-	$(MAKE) -f CMakeFiles/usb_camera.dir/build.make CMakeFiles/usb_camera.dir/ubuntu_encode_usb_camera.c.o
-.PHONY : ubuntu_encode_usb_camera.c.o
+ubuntu_encode_usb_camera.cpp.o:
+	$(MAKE) -f CMakeFiles/usb_camera.dir/build.make CMakeFiles/usb_camera.dir/ubuntu_encode_usb_camera.cpp.o
+.PHONY : ubuntu_encode_usb_camera.cpp.o
 
-ubuntu_encode_usb_camera.i: ubuntu_encode_usb_camera.c.i
+ubuntu_encode_usb_camera.i: ubuntu_encode_usb_camera.cpp.i
 
 .PHONY : ubuntu_encode_usb_camera.i
 
 # target to preprocess a source file
-ubuntu_encode_usb_camera.c.i:
-	$(MAKE) -f CMakeFiles/usb_camera.dir/build.make CMakeFiles/usb_camera.dir/ubuntu_encode_usb_camera.c.i
-.PHONY : ubuntu_encode_usb_camera.c.i
+ubuntu_encode_usb_camera.cpp.i:
+	$(MAKE) -f CMakeFiles/usb_camera.dir/build.make CMakeFiles/usb_camera.dir/ubuntu_encode_usb_camera.cpp.i
+.PHONY : ubuntu_encode_usb_camera.cpp.i
 
-ubuntu_encode_usb_camera.s: ubuntu_encode_usb_camera.c.s
+ubuntu_encode_usb_camera.s: ubuntu_encode_usb_camera.cpp.s
 
 .PHONY : ubuntu_encode_usb_camera.s
 
 # target to generate assembly for a file
-ubuntu_encode_usb_camera.c.s:
-	$(MAKE) -f CMakeFiles/usb_camera.dir/build.make CMakeFiles/usb_camera.dir/ubuntu_encode_usb_camera.c.s
-.PHONY : ubuntu_encode_usb_camera.c.s
+ubuntu_encode_usb_camera.cpp.s:
+	$(MAKE) -f CMakeFiles/usb_camera.dir/build.make CMakeFiles/usb_camera.dir/ubuntu_encode_usb_camera.cpp.s
+.PHONY : ubuntu_encode_usb_camera.cpp.s
 
 # Help Target
 help:
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... usb_camera"
 	@echo "... edit_cache"
+	@echo "... mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.o"
+	@echo "... mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.i"
+	@echo "... mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.s"
 	@echo "... ubuntu_encode_usb_camera.o"
 	@echo "... ubuntu_encode_usb_camera.i"
 	@echo "... ubuntu_encode_usb_camera.s"

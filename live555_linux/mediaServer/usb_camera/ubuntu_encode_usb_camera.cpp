@@ -8,8 +8,10 @@
 #include <sys/mman.h>
 #include <linux/videodev2.h>
 #include "xvid.h"
-
-#define WRITE_PIPE_AS_FILE    1
+#include <cstring>
+#include<sys/types.h>
+#include<sys/stat.h>
+#include "v4l2_camera_interface.h"
 
 #define FRAMERATE_INCR 1001
 #define SMALL_EPS (1e-10)
@@ -17,18 +19,16 @@
 #define INDEX 0
 #define IOCTL(fd, req, addr ) \
 ((-1==ioctl(fd,req,addr))?(perror(#req),close(fd),exit(EXIT_FAILURE)):0)
-
+void getnextframe(int fd, uint8_t *mp4_buffer);
 static float ARG_FRAMERATE = 25.00f;
 static int ARG_QUALITY = 4;
 static int ARG_MAXKEYINTERVAL = 250;
-static char * ARG_OUTPUTFILE= "/tmp/test1.m4e";
+static char * ARG_OUTPUTFILE= "/tmp/test3.m4e";
 //static char * ARG_OUTPUTFILE= "test.m4e";
 
-#if WRITE_PIPE_AS_FILE
-static int fp = 0;
-#else
+
 static FILE * fp = NULL;
-#endif
+
 
 static int done = 0;
 static const int motion_presets[] = {
@@ -88,7 +88,7 @@ XVID_VOP_TRELLISQUANT | XVID_VOP_HQACPRED,
 };
 
 static int XDIM=640,YDIM=480;
-static use_assembler = 0;
+// static use_assembler = 0;
 static void *enc_handle = NULL;
 
 static int enc_init(int use_assembler);
@@ -105,156 +105,21 @@ static void clean(int signum)
 {
     done=1;
 }
+FILE *create_fifo(char *name);
 int 
 main(int argc,char *argv[])
 {
-    //register SIGINT action method ,to save the m4u file
-    signal(SIGINT,clean);
     int fd;
-    struct v4l2_capability cap;    
-    struct v4l2_format format;
-    struct v4l2_requestbuffers reqbuf;
-    struct v4l2_buffer buffer;
-    struct v4l2_input input;
-    int index=0,i;
-for (i=1; i< argc; i++) {
-
-if (strcmp("-asm", argv[i]) == 0 ) {
-use_assembler = 1;
-}else if(strcmp("-f", argv[i]) == 0 && i < argc -1){
-            i++;
-            ARG_OUTPUTFILE = argv[i];
-        }else if(strcmp("-i", argv[i]) == 0 && i < argc -1){
-            i++;
-            index = atoi(argv[i]);
-        } else if(strcmp("-w", argv[i]) == 0 && i < argc -1){
-            i++;
-            XDIM = atoi(argv[i]);
-        } else if(strcmp("-h", argv[i]) == 0 && i < argc -1){
-            i++;
-            YDIM = atoi(argv[i]);
-        } 
-}
-    
-//init capture card
-    
-    fd = open(VIDEO,O_RDWR);
-    if(fd<0)
-    {
-        perror("Can't open /dev/video device");
-        exit(errno);
-    }
-    //if card can't support video capture and by means of steamio,exit 
-    
-    IOCTL(fd, VIDIOC_QUERYCAP, &cap);
-    if ( !(cap.capabilities & V4L2_CAP_VIDEO_CAPTURE)
-         &&!(cap.capabilities & V4L2_CAP_STREAMING))
-    {
-        fprintf(stderr, "Couldn't use the card \n");
-        exit(3);
-    } 
-    
-//query input and select the desired input
-
-IOCTL(fd, VIDIOC_G_INPUT, &index);
-    input.index = index;
-    IOCTL(fd, VIDIOC_ENUMINPUT, &input);
-    printf ("Current input: Index %i,Name %s\n", index,input.name);    
-    for(i=0;;i++)
-    {
-        if(i!=index)
-        {
-            input.index = i;
-            if(-1==ioctl(fd, VIDIOC_ENUMINPUT, &input))
-                break;
-            else
-                printf ("Other input: Index %i,Name %s\n",i,input.name);
-        }
-    }
-IOCTL(fd, VIDIOC_S_INPUT, &index);
-
-    //get current video format,set the desired format
-    format.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-    IOCTL(fd,VIDIOC_G_FMT,&format);
-
-#if 1
-    format.fmt.pix.width = XDIM;
-    format.fmt.pix.height = YDIM;
-    format.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;
-    format.fmt.pix.field = V4L2_FIELD_ANY;//V4L2_FIELD_INTERLACED
-    
-	IOCTL(fd,VIDIOC_S_FMT,&format);
-#endif
-
-    XDIM = format.fmt.pix.width;
-    printf("Gotten width %d\n",XDIM);
-    YDIM = format.fmt.pix.height;
-    printf("Gotten height %d\n",YDIM);
-    
-//let driver get the buffers
-    
-    reqbuf.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-    reqbuf.memory = V4L2_MEMORY_MMAP;
-    reqbuf.count = 4;
-    IOCTL(fd,VIDIOC_REQBUFS,&reqbuf );
-    if (reqbuf.count < 4) 
-    {
-       printf ("Not enough buffer memory for driver\n");
-       exit (5);
-    }
-
-//mmap the driver's buffer to application address
-    
-    //create relative buffers struct to be used by mmap
-
-    struct 
-    {
-        void * start;
-        size_t length;
-    } buffers[reqbuf.count];
-    
-//mmap the driver's kernel buffer into application
-
-for (i=0;i<reqbuf.count;i++)
-    {
-        buffer.type = reqbuf.type;
-        buffer.index =i ;
-        
-        //query the status of one buffer ,mmap the driver buffer
-        
-        IOCTL(fd,VIDIOC_QUERYBUF,&buffer);
-        buffers[i].length = buffer.length;
-        buffers[i].start = mmap (NULL,buffer.length,
-                                 PROT_READ | PROT_WRITE,
-                                 MAP_SHARED,
-                                 fd,buffer.m.offset);
-        if (buffers[i].start == MAP_FAILED) 
-        {
-           close(fd);
-           perror ("mmap");
-           exit(errno);
-        }
-    }
-    //begin video capture
-    
-    IOCTL(fd,VIDIOC_STREAMON,&reqbuf.type);         
-    
-    //enqueue all driver buffers
-    for (i=0;i<reqbuf.count;i++)
-    {        
-        buffer.type = reqbuf.type;
-        buffer.index = i;
-        IOCTL(fd,VIDIOC_QUERYBUF, &buffer);
-        IOCTL(fd,VIDIOC_QBUF,&buffer);
-    } 
+    fp = create_fifo("/tmp/test3.m4e");
+    fd = v4l2_camera_open(VIDEO);
+    v4l2_camera_capture_start(fd);
     //init xvid
     
     int result;
     result = enc_init(1);
     if(result!=0)
     {
-fprintf(stderr, "Encore INIT problem, return value %d\n", result);
-goto clean_all;           
+fprintf(stderr, "Encore INIT problem, return value %d\n", result);        
     }
     
     //get mem of mpg4 frame
@@ -264,87 +129,40 @@ mp4_buffer = (unsigned char *) malloc(XDIM*YDIM);
 if (mp4_buffer==NULL)
     {
         fprintf(stderr,"malloc error");
-        goto clean_all;
+
     }
-   int key;
+    int outbytes,m4v_size;
+    char *frambuf;
+    int buflen;
+    int buf_handle;
+
+
+int key;
 int stats_type;
 int stats_quant;
 int stats_length;
-    int sse[3];     
-    
-//create store mp4 file
-#if WRITE_PIPE_AS_FILE
-fp= open(ARG_OUTPUTFILE, O_WRONLY);
-#else
-fp= fopen(ARG_OUTPUTFILE, "wb");
-#endif
-    if (fp== NULL) {
-    perror("Error opening output file.");
-exit(-1);
-    } 
+int sse[3];
 
-//main loop ,frame capture,compressed 
-
-    i = 0;
-    int outbytes,m4v_size;
     while(!done)
     {
-        //dequeue one frame
-            
-        buffer.type = reqbuf.type;
-        buffer.index = i;
-        IOCTL(fd, VIDIOC_QUERYBUF, &buffer);
-        IOCTL(fd, VIDIOC_DQBUF, &buffer);
-        /*debug info
-        printf("current frame's unix time seconds :%d\n",buffer.timestamp.tv_sec);
-        printf("current frame's unix time mcicoseconds :%d\n",buffer.timestamp.tv_usec);
-        */
-       
-        //compress a frame
+        if(v4l2_camera_data_ready_check(fd) == 0)
+        {
+            frambuf = v4l2_camera_get_a_framebuf(fd, &buflen, &buf_handle);
         
-        m4v_size = enc_main((uint8_t *)buffers[i].start,
-                             mp4_buffer+16,
-                             &key, &stats_type,&stats_quant, &stats_length, sse);
+            m4v_size = enc_main((uint8_t *)frambuf, mp4_buffer+16, &key, &stats_type,&stats_quant, &stats_length, sse);
 
-//store into output file
-#if WRITE_PIPE_AS_FILE
-outbytes = write(fp, mp4_buffer, m4v_size);
-#else
-outbytes = fwrite(mp4_buffer, 1, m4v_size, fp);
-#endif
-if(outbytes != m4v_size)
-{
-    fprintf(stderr,"Error writing the m4u file\n");
-    exit(7);
-}
-
-//enqueue one frame
-            
-        buffer.type = reqbuf.type;
-        buffer.index = i;
-        IOCTL(fd, VIDIOC_QUERYBUF, &buffer );
-        IOCTL(fd, VIDIOC_QBUF, &buffer );
-        i++;            
-        if( i >= reqbuf.count ) 
-            i = 0;
+            // outbytes = fwrite(mp4_buffer, 1, m4v_size, fp);
+            fwrite(mp4_buffer, 1, m4v_size, fp);
+            // if(outbytes != m4v_size)
+            // {
+            //     fprintf(stderr,"Error writing the m4u file\n");
+            //     exit(7);
+            // }
+            v4l2_camera_release_framebuf(fd, buf_handle);
+        }
     }
-clean_all:
-#if WRITE_PIPE_AS_FILE
-	close(fp);
-#else
-    fclose(fp);
-#endif
-enc_stop();    
-    //stop capture
-    IOCTL(fd, VIDIOC_STREAMOFF, &reqbuf.type );
-    //unmmap the apllication buffer
-    for (i=0;i<reqbuf.count;i++)
-        munmap (buffers[i].start,buffers[i].length);    
-    //release the dynamic mem
-    close(fd);
 return 0;
 }
-
 int
 enc_init(int use_assembler)
 {

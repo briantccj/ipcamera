@@ -14,6 +14,7 @@ include_directories(../groupsock/include)
 include_directories(../UsageEnvironment/include)
 include_directories(../live555_rtsp_live_v4l2-master/include)
 include_directories(../../x264)
+include_directories(/mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/)
 
 
 link_directories(
@@ -28,7 +29,8 @@ link_directories(
 )
 
 set(SOURCE_LIST 
-    ubuntu_encode_usb_camera.c
+    ubuntu_encode_usb_camera.cpp
+    /mnt/hgfs/ubuntu_share/ipcamera/v4l2_camera/v4l2_camera_interface.cpp
 )
 
 add_executable(${TARGET} ${SOURCE_LIST})
